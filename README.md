@@ -22,4 +22,6 @@ Este projeto une a funcionalidade de uma "árvore de links" com uma identidade v
 ## 💻 Como rodar o projeto
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/bea-nkmt/linktree-retrodark.git](https://github.com/bea-nkmt/linktree-retrodark.git)
+   https://github.com/bea-nkmt/linktree-retrodark.git
+
+   
