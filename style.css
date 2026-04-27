@@ -1,0 +1,91 @@
+/*Reset básico para remover margens e preenchimentos padrão*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+/* Apply retro font only to headings and .bio for more control */
+h1, h2, h3, h4, h5, h6, .bio {
+    font-family: 'VT323', monospace; /*Fonte VT323 para um estilo retrô*/
+}
+
+body{
+    background-color:#141313; /*fundo escuro para o tema dark*/
+    color: #dbcaba; /*cor do texto para o tema dark*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+.foto-perfil{
+    background-color: #132c38;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width:100%;
+    max-width: 380px;
+}
+
+.avatar{
+    border-radius: 20%;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 170px;
+    object-fit: cover; /*garante que a imagem preencha o espaço sem distorção*/
+    border: 1px solid #3b685a; /*borda verde para destacar a foto de perfil*/
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.localizacao{
+    color: #62857a; /*cor verde para a localização*/
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.bio{
+    font-size: 14px;
+    color:#dbcaba; /*cor clara para a bio*/
+    margin-bottom: 24px;
+}
+
+/*Estilização dos links de redes sociais*/
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.links a{
+    background-color:#1413139f;
+    color:#dbcaba;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/*Efeito ao passar o mouse*/
+.links a:hover{
+    background-color:#7a7688;
+    color: #121212;
+}
+
+@media (max-width: 400px) {
+    .foto-perfil {
+        width: 90%; /* O card ocupa 90% da largura em telas pequenas */
+        padding: 20px;
+    }
+    .avatar {
+        width: 100%; /* A imagem se ajusta ao card */
+        height: auto;
+    }
+}
+
